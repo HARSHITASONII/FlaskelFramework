@@ -68,3 +68,9 @@ class Model(db.Model):
     @classmethod
     def all(cls):
         return db.session.query(cls).all()
+    
+    def to_dict(self):
+        return {
+            column.name: getattr(self, column.name)
+            for column in self.__table__.columns
+        }
