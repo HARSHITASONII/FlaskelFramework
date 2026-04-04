@@ -1,4 +1,4 @@
-from database.database import db
+from app.Database.database import db
 from sqlalchemy.orm import Query
 
 
