@@ -1,4 +1,4 @@
-from Models.User import User
+from app.Models.User import User
 from flask import jsonify, request, render_template, redirect, url_for
 
 class UserController:
